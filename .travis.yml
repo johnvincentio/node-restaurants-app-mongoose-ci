@@ -2,3 +2,10 @@ language: node_js
 node_js: node
 services:
 - mongodb
+deploy:
+  provider: heroku
+  api_key:
+    secure: IWFZjcrVAETARFNmeo/NS/OmjGak18b0t9QvyINYYVxzyYTlKvpjvW7xba3Pf2jE3mql5ujdK5TOaI4+pPvNdEctpk998BzougMAqKZTJr7SJ02BQvTP4B/R5TH7Z9FNWIiAgGcECZJChKGOSl0CppBhGrBFJbfazGPL6gg8CAk3I7aiPz1t2bH3MRwF4ao7GE0V0Eo+HP2EMH96ODXPRGoPu6tpYctuvbl440uioI+m9cSTRwdscfHwdVpGfggIOFmkP2d2h/cC7U5pOv2IQk9EvXTDmtiOGoKKCQb+KNNZe4PIZqRxrI+pvrHeEvb1lBYDj5/cpd7ZavmITWEMaROEIhZVzvGddo34z6dzRm8SoZIp4qnPeZITDNAZmPeb/PhJZjxX5NJcbpi2kLINXoo+CAU7ryjDi+UN5kwhdRrIax0TZYTJFW4n2BcDN0/QIPn9Eer3sFg8VARyyHdhoPqM7nzpSOCUow1PWXXdl1svst4PzydjTfZnTOzgKrDZ03JWBpBTfDdZYgqSLlNEd4JZ8IZSIy6FM2rtr7HjHEMmCXCOmKOPU0E0m4xDH7NA4HyPSBwB0TScFLPVYMLiJ5j/gorkf6WRiUcUwaPq4boVhefi/cZx3mFOPrRxsRnbruol25GIvy7jPzrKhv15b0Y/CpSeC89GNkiCBXYYlC4=
+  app: calm-harbor-24855
+  on:
+    repo: johnvincentio/node-restaurants-app-mongoose-ci
